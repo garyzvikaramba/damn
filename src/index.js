@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer-core');
+const puppeteer = require('puppeteer');
 const _cliProgress = require('cli-progress');
 const spintax = require('mel-spintax');
 const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
