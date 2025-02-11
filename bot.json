@@ -1,0 +1,160 @@
+{
+    "appconfig": {
+        "headless": true,
+        "isGroupReply": false,
+        "webhook": "",
+        "downloadMedia": false,
+        "replyUnreadMsg": false,
+        "CustomInjectionFolder": "",
+        "quoteMessageInReply": false,
+        "server": {
+            "port": 8080,
+            "username": "admin",
+            "password": "admin"
+        }
+    },
+    "bot": [
+        {
+            "contains": [
+                "audio"
+            ],
+            "exact": [],
+            "response": "Sending audio",
+            "file": [
+                "./mediaToBeSent/file_example_MP3_700KB.mp3",
+                "./mediaToBeSent/file_example_MP3_1MG.mp3"
+            ]
+        },
+        {
+            "contains": [
+                "github"
+            ],
+            "exact": [],
+            "response": "Sending images",
+            "file": [
+                "./mediaToBeSent/github.png",
+                "./mediaToBeSent/github-two.png"
+            ]
+        },
+        {
+            "contains": [],
+            "exact": [
+                "hi"
+            ],
+            "response": "{hello|howdy}",
+            "webhook": ""
+        },
+        {
+            "contains": [],
+            "exact": [
+                "hello"
+            ],
+            "response": "hi",
+            "afterSeconds": 3
+        },
+        {
+            "contains": [],
+            "exact": [
+                "hiee"
+            ],
+            "response": "hi"
+        },
+        {
+            "contains": [],
+            "exact": [
+                "hey"
+            ],
+            "response": "hi"
+        },
+        {
+            "contains": [
+                "michhami",
+                "dukkadam"
+            ],
+            "exact": [],
+            "response": "Michhami Dukkadam 🙏"
+        },
+        {
+            "contains": [
+                "happy",
+                "birthday",
+                "bday"
+            ],
+            "exact": [],
+            "response": "Thank you"
+        },
+        {
+            "contains": [],
+            "exact": [
+                "how are you"
+            ],
+            "response": "I am {good {thanks| thank you}|great}. How about you?"
+        },
+        {
+            "contains": [],
+            "exact": [
+                "hbd"
+            ],
+            "response": "Thank you"
+        },
+        {
+            "contains": [
+                "શુભકામના",
+                "જન્મદિન"
+            ],
+            "exact": [],
+            "response": "આભાર 🙏"
+        },
+        {
+            "contains": [
+                "janmdin",
+                "hardik",
+                "shubhkaamna"
+            ],
+            "exact": [],
+            "response": "aabhar 🙏"
+        },
+        {
+            "contains": [],
+            "exact": [
+                "variables"
+            ],
+            "response": "this is sample of variables:\nHey [#name] 👋, [#greetings]. \nThis is your phone number, [#phoneNumber]"
+        }, 
+        {
+            "contains": ["bill", "order","qrCode"],
+            "exact": [],
+            "webhook": "https://script.google.com/macros/s/AKfycbzllkjjUsFMWUUsGoJ3ckBdWudQ2OZ8PAJGr6EDF9wXQtMoaylFGHFpBUoO1Wx6ze8y/exec",
+            "response": "okay. Checking",
+            "afterSeconds": 3
+    
+        }, 
+        {
+            "contains": ["eggs", "rice"],
+            "exact": [],
+            "webhook": "https://script.google.com/macros/s/AKfycbxA03tx5sD_iN0jOtjk9l5lxdHjIZwJ81CvDtSax12jk_0JKTO4y9qSNnjpxo8a5Yrh/exec",
+            "response": "okay. Checking for product",
+            "afterSeconds": 3
+    
+        }, 
+        {
+            "contains": ["subscribe", "unsubscribe"],
+            "exact": [],
+            "webhook": "https://script.google.com/macros/s/AKfycbw2-d9CIvb4NYFtAxlQ4LI0nW7jKcbSFX0421F95a3b6UbJGxc6VF-iQE09mtKh4iff/exec",
+            "response": "okay...",
+            "afterSeconds": 3
+    
+        }
+    ],
+    "blocked": [],
+    "allowed": [],
+    "noMatch": "",
+    "smartreply": {
+        "suggestions": [
+            "Hello",
+            "Welcome to my store !!",
+            "Thanks for reaching out 🙏"
+        ],
+        "clicktosend": true
+    }
+}
